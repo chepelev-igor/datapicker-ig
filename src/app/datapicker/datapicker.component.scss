@@ -1,0 +1,130 @@
+$width: 72*3px;
+
+.btn-date{
+  background: #9dbaf5;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  min-width: 42px;
+  &.-month {
+    width: 130px;
+  }
+}
+
+.block-year,
+.block-month {
+  width: 72px;
+  height: 56px;
+  background: #6d97dc;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+
+  &.-disabled {
+    background: #acbcd5;
+    color: #d3d3d3;
+  }
+
+  &.-active {
+    color: #ffffff;
+    background: #3663ad;
+
+    &:hover {
+      background: #3663ad;
+    }
+  }
+
+  &:hover {
+    background: #3663ad;
+  }
+}
+
+.block-day {
+  background: #6d97dc;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  height: 27px;
+
+  &.-disabled {
+    background: #acbcd5;
+    color: #d3d3d3;
+  }
+
+  &.-active {
+    color: #ffffff;
+    background: #3663ad;
+
+    &:hover {
+      background: #3663ad;
+    }
+  }
+
+  &:hover {
+    background: #3663ad;
+  }
+}
+
+.wrap-block-date {
+  display: grid;
+  grid-template-columns: 72px 72px 72px;
+  grid-row-gap: 2px;
+  column-gap: 2px;
+}
+
+.wrap-block-day {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-row-gap: 2px;
+  column-gap: 2px;
+  width: fit-content;
+}
+
+.img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.wrap-datepicker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 19px;
+  width: 225px;
+  height: 19px;
+}
+
+.wrap-datapicker-body {
+  width: fit-content;
+  background: #e9f8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 19px 0 16px;
+  border-radius: 10px;
+
+}
+
+.wrap-datepicker-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 19px;
+  width: 225px;
+  height: 19px;
+}
